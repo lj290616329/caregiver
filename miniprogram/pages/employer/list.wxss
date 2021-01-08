@@ -1,0 +1,105 @@
+.container{
+  padding: 0 20rpx;
+}
+.order-box{
+  margin-top: 24rpx;
+}
+
+.order-title{
+  font-size: 34rpx;
+  display: flex;
+  margin-top: 20rpx;
+  align-items: center;
+}
+.order-title:first-child{
+  margin-top: 0;
+}
+.title-icon{
+  width:32rpx;
+  height: 32rpx;
+  margin-right: 12rpx;
+}
+.order-list{
+  overflow: hidden;
+}
+.order{
+  background-color: #fff;
+  padding: 24rpx 10rpx;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 24rpx;
+  margin:10rpx 0;
+  align-items: center;
+}
+.order-head{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  margin:0 20rpx;
+}
+.order-des{
+  flex: 1;
+}
+.order-name{
+  color:#4F4F4F;
+  margin:20rpx 10rpx;
+  overflow: hidden;
+}
+.name-lf{
+  float: left;
+}
+.name-rt{
+  float: right;
+}
+
+.order-time{
+  float: right;
+  color: #686767;
+}
+.order-day{
+  color: #f04124;
+}
+.lager-font{
+  font-size: 34rpx;
+  font-weight: lager;  
+}
+.middle-font{
+  font-size: 30rpx;
+}
+.small-font{
+  font-size: 28rpx;
+  color: #444444;
+}
+
+.mini-font{
+  font-size: 18rpx;
+  color: #686767;
+}
+.order-type{
+  margin: 0;
+}
+.order-type text{
+  padding:0 10rpx; 
+  color:#fff;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+  opacity: 0.8;
+}
+.type-time{
+  background-color: #f04124;
+}
+.type-home{
+  background-color: #f99303;
+  opacity: 0.8;
+}
+.order-history{
+  color:#969696;
+}
+.type-history{
+  float: right;
+  margin: 0;
+}
+.type-history text{
+  background-color: #969696;
+}

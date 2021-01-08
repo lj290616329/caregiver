@@ -1,0 +1,73 @@
+<view class="container">
+  <view class="head">
+    <view class="head-item">
+      <text class="item-active">全部</text>
+    </view>
+    <view class="head-item">
+      <text>已记录</text>
+    </view>
+    <view class="head-item">
+      <text>未记录</text></view>
+  </view>
+  <view class="cards">
+    <navigator url="/pages/serve/add" class="card">
+      <view class="card-title">
+        <view class="card-item">
+          <text class="card-title-name">老年人</text>
+          <text class="card-title-des"> (服务对象)
+          </text>
+        </view>
+        <view class="card-item">
+          <text class="card-title-name">李小林</text>          
+          <text class="card-title-des"> (雇主)
+          </text>
+        </view>
+      </view>
+      <view class="card-des">
+        <view class="card-item card-type type1">分时</view>
+        <view class="card-item card-time">2020-10-08</view>
+      </view>
+      <view class="card-tag"></view>
+    </navigator>
+
+    <view class="card">
+      <view class="card-title">
+        <view class="card-item card-title-name">
+          老年人
+          <text class="card-title-des"> (服务对象)
+          </text>
+        </view>
+        <view class="card-item card-title-name">
+          李小林
+          <text class="card-title-des"> (雇主)
+          </text>
+        </view>
+      </view>
+      <view class="card-des">
+        <view class="card-item card-type type1">分时</view>
+        <view class="card-item card-time">2020-10-08</view>
+      </view>
+      
+    </view>
+
+    <navigator url="/pages/serve/add"  class="card">
+      <view class="card-title">
+        <view class="card-item card-title-name">
+          老年人
+          <text class="card-title-des"> (服务对象)
+          </text>
+        </view>
+        <view class="card-item card-title-name">
+          李小林
+          <text class="card-title-des"> (雇主)
+          </text>
+        </view>
+      </view>
+      <view class="card-des">
+        <view class="card-item card-type type2">住家</view>
+        <view class="card-item card-time">2020-10-08</view>
+      </view>
+      <view class="card-tag"></view>
+    </navigator>
+  </view>
+</view>

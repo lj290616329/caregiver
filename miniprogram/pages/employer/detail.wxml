@@ -1,0 +1,105 @@
+<view class="container">
+  <view class="head">
+    <view class="head-basic">
+      <image class="head-img" src="/images/headimg.png"></image>
+      <view class="basics">
+        <view class="basic-box">
+          <view class="basic-name">李小林(雇主母亲)</view>
+          <view class="basic-type">
+            住家
+          </view>
+        </view>
+        <view class="basic-box">
+          <view class="basic-des">
+            年龄:
+          </view>
+          <view class="basic-val">
+            65岁
+          </view>
+          <view class="basic-tag">
+            老年人
+          </view>
+        </view>
+        <view class="basic-box">
+          <view class="basic-des">
+            家庭成员:
+          </view>
+          <view class="basic-val">
+            丈夫、女儿、女婿
+          </view>
+        </view>
+      </view>      
+    </view>
+    <view class="head-sup">
+      <view class="basic-box">
+          <view class="basic-des">
+            地址：
+          </view>
+          <view class="basic-val">
+            北京市海定区成府路华清嘉园1号楼
+          </view>
+          <image class="basic-position" src="/images/position.png"></image>
+        </view>
+    </view>
+  </view>
+
+  <view class="categorys">
+    <view class="category">
+      <view class="category-title">
+        <image class="category-img" src="/images/zhaohurizhi.png"></image>
+        <view class="cell-bd">照护日志</view>
+        <view class="cell-ft">查看更多></view>
+      </view>
+
+      <view class="category-cell">
+        <view class="cell-bd">日常照护</view>
+        <view class="cell-ft">2020/11/08</view>
+      </view>
+      <view class="category-cell">
+        <view class="cell-bd">日常照护</view>
+        <view class="cell-ft">2020/11/08</view>
+      </view>
+      <view class="category-cell">
+        <view class="cell-bd">日常照护</view>
+        <view class="cell-ft">2020/11/08</view>
+      </view>
+    </view>
+
+
+    <view class="category">
+      <view class="category-title">
+        <image class="category-img" src="/images/zhaohufangan.png"></image>
+        <view class="cell-bd">照护方案</view>
+        <view class="cell-ft">添加方案+</view>
+      </view>
+
+      <view class="category-cell">
+        <view class="cell-bd">糖尿病管理</view>
+        <view class="cell-ft">1年</view>
+      </view>
+      <view class="category-cell">
+        <view class="cell-bd">高血压管理</view>
+        <view class="cell-ft">1年半</view>
+      </view>
+    </view>
+
+    <view class="category">
+      <view class="category-title">
+        <image class="category-img" src="/images/jiankangdashuju.png"></image>
+        <view class="cell-bd">健康大数据</view>
+        <view class="cell-ft">添加数据+</view>
+      </view>
+
+      <view class="category-cell">
+        <navigator url="/pages/webview/index?url=https://health.tsing-care.com/mobile/index/record/list" class="cell-bd">无创体检数据</navigator>
+      </view>
+    </view>
+
+  </view>
+
+  <view class="btns">
+    <navigator  url="/pages/ncds/index" class="btn">慢病管理</navigator>
+  </view>
+
+
+</view>

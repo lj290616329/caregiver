@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="head">
+    <view class="head-title">系统检测到您的数据,请确认</view>
+  </view>
+  <view class="information">
+    <view class="information-cell">
+      <view class="information-title">姓名:</view>
+      <view class="information-val">{{information.name}}</view>
+      <view class="information-des">中级(四级)</view>
+    </view>
+    <view class="information-cell">
+      <view class="information-title">身份证号:</view>
+      <view class="information-val">{{information.id_card}}</view>
+    </view>
+    <view class="information-cell">
+      <view class="information-title">手机号:</view>
+      <view class="information-val">{{information.phone}}</view>
+    </view>
+    <view class="information-cell">
+      <view class="information-title">注册日期:</view>
+      <view class="information-val">2020-10-05 15:03:05</view>
+    </view>
+  </view>
+  <view class="btns">
+    <view class="btn btn-cancle" bindtap="no">不是我</view>
+    <view class="btn btn-primary" bindtap="yes">是我</view>
+  </view>
+</view>

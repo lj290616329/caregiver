@@ -1,0 +1,56 @@
+<view class="warn" wx:if="{{warn}}">{{warnMsg}}</view>
+<view class="container" wx:if="{{edit}}">
+  <view class="card">
+    <view class="card-title">
+      <image src="/images/jiankangdashuju.png"></image>
+      <text>类型管理(长按删除)</text>
+      <input class="card-input" maxlength="20" value="{{type}}" placeholder="请输入类型" bindblur="typeblur"/>
+      <button class="card-btn" bindtap="add">添加</button>
+    </view>
+    <view class="card-content">
+      <view class="card-tag" wx:for="{{records}}" wx:if="{{index>0}}" bindlongpress="delete" data-index="{{index}}">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="card" wx:for="{{records}}" wx:if="{{index>0}}">
+    <view class="card-title">
+      <text>{{item.name}}</text>
+    </view>
+    <view class="card-content">
+      <textarea class="card-textarea" bindblur="textareablue" data-index="{{index}}" value="{{records[index].value}}"></textarea>
+    </view>
+  </view>
+  
+  <view class="card" wx:if="{{words.length>0}}">
+    <view class="card-title">
+      <text>文字识别结果(下滑筛选)</text>
+    </view>
+    <view class="card-content">
+      <scroll-view scroll-y="true" class="card-scroll">
+        <view class="check-item" wx:for="{{words}}">
+          <view class="check-text">{{item.words}}</view>
+          <picker class="check-picker" mode="selector" range="{{types}}" data-index="{{index}}" bindchange="pickerChange" disabled="{{disableds[index]}}">
+              {{records[checks[index]].name?records[checks[index]].name:'请选择类型'}}
+          </picker>
+          <switch data-index="{{index}}" checked="{{switchs[index]}}" class="check-checkbox" bindchange="switchChange"/>
+                 
+        </view>
+      </scroll-view>
+    </view>    
+  </view>
+  <view class="card">
+    <view class="btns">
+      <view class="btn" bindtap="upload">识别图片</view>
+      <view class="btn">保存</view>
+    </view>
+  </view>
+  
+</view>
+<view wx:else>
+  <image-cropper id="image-cropper" bindload="cropperload" bindimageload="loadimage" bindtapcut="clickcut" limit_move="{{limit_move}}" disable_rotate="{{disable_rotate}}" width="{{width}}" height="{{height}}" imgSrc="{{src}}" angle="{{angle}}" disable_width="{{disable_width}}" max_width="{{max_width}}" max_height="{{max_height}}" disable_height="{{disable_height}}" disable_ratio="{{disable_ratio}}">
+  </image-cropper>
+  <text class="hint">点击中间裁剪框识别文字</text>
+  <view class='bottom'>  
+    <button catchtap='upload'>上传</button>
+  </view>
+</view>
+

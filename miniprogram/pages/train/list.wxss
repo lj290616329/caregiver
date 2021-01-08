@@ -1,0 +1,39 @@
+.content{
+  background-color: #fff;
+  padding:30rpx 36rpx;
+}
+.train-cell{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  height: 88rpx;
+  border-bottom:1rpx solid #e4e1e1;
+}
+.train-cell:last-child{
+  border:none;
+}
+.train-title{
+  flex:1;
+  font-size: 30rpx;
+  color:#333;
+}
+.train-level{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 18rpx;
+  color:#fff;
+  font-size: 30rpx;
+  line-height: 48rpx;
+  text-align: center;
+}
+.level1{
+  background-color: #f04124;
+}
+.level2{
+  background-color: #f99303;
+}
+.train-time{
+  font-size: 30rpx;
+  color:#666;
+  margin-left: 10rpx;
+}

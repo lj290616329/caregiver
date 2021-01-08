@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="head">
+    <view class="head-title">
+      <view class="head-item">
+        <text class="head-title-name">服务对象:</text>
+        <text class="head-title-des"> 孕产妇</text>
+        
+      </view>
+      <view class="head-item">
+        <text class="head-title-name">雇主:</text>          
+        <text class="head-title-des">李小林</text>
+      </view>
+    </view>
+    <view class="head-des">
+      <view class="head-item head-type type1">分时</view>
+      <view class="head-item head-time">2020-10-08</view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="form-title">
+      <image src="/images/zhaohurizhi.png"></image>
+      记录
+    </view>
+    <view class="form-item">
+      <view class="form-tag">正常</view>
+      <view class="form-tag">遭雇主投诉</view>
+      <view class="form-tag">遭家属无故刁难</view>
+      <view class="form-tag">服务项目全部顺利完成</view>
+      <view class="form-tag">遇特殊情况</view>
+      <view class="form-tag">照护对象遇紧急情况</view>
+    </view>
+    <view class="form-item">
+      <textarea placeholder="请输入记录情况">
+      </textarea>
+    </view>
+    <view class="form-item">
+      <text>上传图片</text>
+    </view>
+    <view class="form-item">
+      <block wx:for="{{imgList}}">
+        <image mode="aspectFill" class="item-img" src="{{item}}" data-index="{{index}}"  bindlongpress="handleLongPress"></image>
+      </block>
+      <view class="form-upload" bindtap="upload">
+        <image src="/images/add.png"></image>
+      </view>        
+    </view>
+    <view class="form-item">
+      <view class="form-btn">记录</view>
+    </view>
+    
+  </view>
+</view>

@@ -1,0 +1,61 @@
+<view class="container">
+  <view class="content">
+    <view class="train-cell">
+      <view class="train-title">信息化工具</view>
+      <view class="train-level level1">优</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+    <view class="train-cell">
+      <view class="train-title">护理无创体验</view>
+      <view class="train-level level1">优</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+    <view class="train-cell">
+      <view class="train-title">无创呼吸机使用</view>
+      <view class="train-level level1">优</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+    <view class="train-cell">
+      <view class="train-title">心理咨询</view>
+      <view class="train-level level2">良</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+    <view class="train-cell">
+      <view class="train-title">慢性疾病的健康教育</view>
+      <view class="train-level level1">优</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+    <view class="train-cell">
+      <view class="train-title">运动与康复护理知识与技能</view>
+      <view class="train-level level2">良</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+    <view class="train-cell">
+      <view class="train-title">中医基础知识与技能</view>
+      <view class="train-level level1">优</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+    
+    <view class="train-cell">
+      <view class="train-title">老年人护理知识与技能</view>
+      <view class="train-level level1">优</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+    <view class="train-cell">
+      <view class="train-title">妇儿护理知识与技能 </view>
+      <view class="train-level level2">良</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+    <view class="train-cell">
+      <view class="train-title">医学基础知识</view>
+      <view class="train-level level1">优</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+    <view class="train-cell">
+      <view class="train-title">基础照护知识与技能</view>
+      <view class="train-level level1">优</view>
+      <view class="train-time">2020/09/15</view>
+    </view>
+
+  </view>
+</view>

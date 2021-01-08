@@ -1,0 +1,171 @@
+.top{
+  position: absolute;
+  width:100%;
+  top:10rpx;
+  display: flex;
+  flex-flow:wrap;
+  z-index: 10;
+  color:white;
+  justify-content:space-around;
+}
+.hint{
+  position: absolute;
+  top:10rpx;
+  width:100%;
+  font-size: 33rpx;
+  text-align: center;
+  color:white;
+  z-index: 10;
+}
+view{
+  font-size: 30rpx;
+}
+.bottom{
+  position: absolute;
+  width:100%;
+  bottom:50rpx;
+  display: flex;
+  z-index: 10;
+  justify-content: center;
+  align-items: center;
+  flex-wrap:wrap;
+  height: 210rpx;
+}
+button{
+  font-size:27rpx;
+  z-index:2;
+  padding:0 20rpx;
+  height:60rpx;
+  min-width:70rpx;
+  margin:0 4rpx;
+  background-color: #fff;
+}
+.input{
+  display: flex;
+  height: 50rpx;
+  width:50%;
+}
+.input>.label{
+  min-width:150rpx;
+  font-size: 30rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+}
+.input>input{
+  margin-left:10rpx;
+  text-align: center;
+  max-width:160rpx;
+  border:1px solid rgb(255, 255, 255);
+  height: 50rpx;
+  line-height: 50rpx;
+  min-height: 50rpx;
+  box-sizing: border-box;
+}
+
+.card{
+  background-color: #fff;
+  margin-top: 10rpx;
+  padding:30rpx;
+}
+.card-title{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+}
+.card-title image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.card-title text{
+  flex:1;
+  font-size: 30rpx;
+  padding-left: 10rpx;
+}
+.card-content{
+  margin-top:24rpx;
+  display: flex;
+  align-items: center;
+}
+.card-input{
+  width: 150rpx;
+  border: 1px solid #eee;
+  padding: 10rpx;
+  margin-right: 10rpx;
+  border-radius: 10rpx;
+}
+.card-btn{
+  color:#fff;
+  background-color: #f99303;
+  margin: 0;
+}
+.card-tag{
+  display: inline-block;
+  margin: 10rpx 12rpx;
+  border-radius: 16rpx;
+  padding: 0 14rpx;
+  line-height: 56rpx;
+  height: 56rpx;
+  background-color: #f99303;
+  color: #fff;
+  font-size: 24rpx;
+}
+.card-textarea{
+  flex:1;
+  border:1rpx solid #cfcfcf;
+  padding:10rpx;
+  height: 160rpx;
+  width: inherit;
+}
+.card-scroll{
+  height: 300rpx;
+}
+.check-item{
+  display: flex;
+  align-items: center;
+  padding: 30rpx;
+}
+.check-text{
+  flex:1;
+}
+.check-picker{
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 24rpx;
+  padding: 0 40rpx 0 20rpx;
+  position: relative;
+  background-color: #fff;
+  border-radius: 10rpx;
+  border: 1rpx solid #eee;
+  margin-right: 20rpx;
+}
+.check-picker::after{  
+  content: "";
+  width: 12rpx;
+  height: 12rpx;
+  border-left: 4rpx solid #333;
+  border-bottom: 4rpx solid #333;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+}
+.check-checkbox{
+  margin-right: 20rpx;
+}
+
+.btns{
+  display: flex;
+}
+.btn{
+  flex:1;
+  margin:0 30rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size:34rpx;
+  color:#fff;
+  background-color: #f99303;
+  text-align: center;
+  border-radius: 20rpx;
+}

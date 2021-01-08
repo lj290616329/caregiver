@@ -1,0 +1,92 @@
+.head{
+  position: relative;
+  background-color: #f99303;
+  color:#fff;
+  text-align: center; 
+  padding: 20rpx 20rpx 60rpx;
+}
+.head-title{
+  margin: 20rpx auto;
+  font-size:34rpx;
+}
+.head-skills{
+  padding:0 60rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap; 
+}
+.skill{
+  width:45%;
+  display: flex;
+  align-items:center;
+  font-size:30rpx;
+  font-weight: bold;
+  margin: 10rpx auto;
+}
+.skill image{
+  width:40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.form-cells{
+  position: relative;
+  top:-40rpx;
+  padding:20rpx 0;
+  background-color: #fff;
+  width: 94%;
+  margin:0 auto;
+  border-radius: 15rpx 15rpx 0 0;
+  height: calc(100vh - 300rpx);
+}
+.form-cell{
+  background-color: #f9f9f9;
+  display: flex;
+  margin:30rpx;
+  border-radius: 15rpx;
+  border:1rpx solid #ddd;
+  align-items: center;
+  font-size:30rpx;
+}
+
+.input-placeholder,.textarea-placeholder{
+  color: #777;
+  font-size:30rpx;
+}
+.form-cell image{
+  width: 40rpx;
+  height: 40rpx;
+  margin: 24rpx;
+}
+.form-cell input{
+  flex:1;
+}
+.form-cell button{
+  color:#3399d4;
+}
+.form-btn{
+  font-size: 34rpx;
+  width:500rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #f99303;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin:100rpx auto;
+  border-radius: 44rpx;
+}
+.warn{
+  width: 96%;
+  position: fixed;
+  top: 0;
+  background-color: #e75e58;
+  font-size: 32rpx;
+  color: #fff;
+  z-index: 99999;
+  text-align: center;
+  border-radius: 8rpx;
+  min-height: 40rpx;
+  line-height: 40rpx;
+  left: 2%;
+}

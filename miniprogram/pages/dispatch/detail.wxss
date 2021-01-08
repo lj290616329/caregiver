@@ -1,0 +1,136 @@
+.container{
+  padding-bottom: 160rpx;
+}
+.head{
+  padding:40rpx 24rpx;
+  background-color: #fff;
+}
+.head-basic{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.head-img{
+  width: 100rpx;
+  height: 100rpx;
+  margin:10rpx 20rpx;
+  border-radius: 50%;
+}
+.basics{
+  flex:1;
+  margin-left:10rpx;
+}
+.basic-box{
+  display: flow-root;
+  align-items: center;
+}
+.basic-name,.basic-des,.basic-val{
+  display: inline-block;
+  margin-right: 10rpx;
+}
+.basic-name{
+  flex:1;
+  font-weight: bold;
+  font-size: 34rpx;
+}
+.basic-des{
+  font-size: 30rpx;
+  color:#727272;
+  
+}
+.basic-type{
+  float: right;
+  background-color: #f99303;
+  color:#fff;
+  font-size: 30rpx;
+  padding: 5rpx 24rpx;
+  border-radius: 24rpx;
+}
+.basic-tag{
+  background-color: #f04124;
+  padding: 5rpx 10rpx;
+  font-size: 24rpx;
+  display: inline-block;
+  margin-left: 80rpx;
+  color:#fff;
+  border-radius: 40rpx;
+}
+.basic-tip{
+  font-size:35rpx;
+  color: #f04124;
+}
+.head-sup{
+  margin-top: 10rpx;
+  padding-left: 40rpx;
+}
+.basic-position{
+  width:40rpx;
+  height: 40rpx;
+  margin-left:10rpx;
+  vertical-align: middle;
+}
+.categorys{
+  overflow: hidden;
+}
+.category{
+  padding: 24rpx 40rpx;
+  margin-top:24rpx;
+  background-color: #fff;
+}
+.category-title{
+  font-size:34rpx;
+}
+.category-cell{
+  font-size:30rpx;
+}
+.category-title,.category-cell{
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding:20rpx 0;
+}
+.category-cell{
+  opacity: 0.75;
+  border-bottom:2rpx solid #eee;
+}
+.category-cell:last-child{
+  border:none;
+}
+.category-img{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 24rpx;
+}
+.cell-bd{
+  flex:1;
+}
+.cell-ft{
+  font-size: 30rpx;
+}
+.btns{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  margin-top:100rpx;
+}
+.btn{
+  flex:1;
+  margin: 0 30rpx;
+  border-radius: 60rpx;
+  padding: 20rpx 0;  
+}
+.btn-cancle{
+  border: 1rpx solid #9a9a9a;
+  color: #9a9a9a;
+  background-color: #fff;
+}
+.btn-primary{
+  background-color: #f99303;
+  color: #fff;
+}
+
+

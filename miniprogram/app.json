@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "pages/index/login",
+    "pages/ocr/index",
+    "pages/ncds/index",
+    
+    "pages/index/confirm",
+    "pages/train/list",
+    "pages/serve/add",
+    "pages/serve/list",
+    "pages/dispatch/list",
+    "pages/dispatch/detail",
+    "pages/employer/detail",
+    "pages/employer/list",
+    "pages/illness/index",
+    "pages/home/index",
+    "pages/webview/index"
+    
+  ],
+  "window": {
+    "backgroundColor": "#F5F5F5",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f99303",
+    "navigationBarTitleText": "清云健康照护师",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

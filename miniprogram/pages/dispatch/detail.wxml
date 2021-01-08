@@ -1,0 +1,89 @@
+<view class="container">
+  <view class="head">
+    <view class="head-basic">
+      <image class="head-img" src="/images/headimg.png"></image>
+      <view class="basics">
+        <view class="basic-box">
+          <view class="basic-des">
+            雇主:
+          </view>
+          <view class="basic-val">
+            王晓琳
+          </view>
+          <view class="basic-type">
+            住家
+          </view>
+        </view>
+        <view class="basic-box">
+          <view class="basic-des">
+            服务对象:
+          </view>
+          <view class="basic-val">
+            孕产妇
+          </view>
+          <view class="basic-des">
+            2020-12-21 10:12
+          </view>
+        </view>
+      </view>      
+    </view>
+    <view class="head-sup">
+      <view class="basic-box">
+          <view class="basic-des">
+            地址：
+          </view>
+          <view class="basic-val">
+            北京市海定区成府路华清嘉园1号楼
+          </view>
+          <image class="basic-position" src="/images/position.png"></image>
+      </view>
+      <view class="basic-box">
+          <view class="basic-des">
+            服务期限:
+          </view>
+          <view class="basic-val">
+            <text class="basic-tip">30天</text>(7.15~8.15)
+          </view>
+          
+      </view>
+      <view class="basic-box">
+          <view class="basic-des">
+            预期薪资:
+          </view>
+          <view class="basic-val">
+            <text class="basic-tip">600/天</text>
+          </view>
+          
+      </view>
+      <view class="basic-box">
+          <view class="basic-des">
+            服务技能:
+          </view>
+          <view class="basic-val">
+            生活照护、孕产妇照料
+          </view>
+          
+      </view>
+      <view class="basic-box">
+          <view class="basic-des">
+            每日服务时长:
+          </view>
+          <view class="basic-val">
+            全天
+          </view>          
+      </view>
+      <view class="basic-box">
+          <view class="basic-des">
+            其他:
+          </view>
+          <view class="basic-val">
+            客户平时里有人照料，但是欢人部缺乏专业护理知识，以及日常的饮食照料，想找一个专业照护师，希望能够把月子做好了。
+          </view>                  
+      </view>
+    </view>
+    <view class="btns">
+      <view class="btn btn-cancle" bindtap="no">拒绝</view>
+      <view class="btn btn-primary" bindtap="yes">确认接单</view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,107 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="head">
+    <view class="head-personal">
+      <image class="avatar" src="{{userInfo.avatarUrl?userInfo.avatarUrl:'/images/headimg.png'}}"></image>
+      <view class="personal-des">
+        <view class="nickName">{{userInfo.nickName}}</view>
+        <view class="stars" wx:if="{{information.role==3}}">
+          <image class="star" src="/images/xingxing.png"></image>
+          <image class="star" src="/images/xingxing.png"></image>
+          <image class="star" src="/images/xingxing.png"></image>
+          <image class="star" src="/images/xingxing.png"></image>
+          <image class="star" src="/images/xingxing.png"></image>
+        </view>
+      </view>
+      <picker class="personal-title"  bindchange="titleChange" range="{{roleName}}"  value="{{information.role}}">
+        {{roleName[information.role]}}
+      </picker>
+    </view>
+    <view class="head-skills" wx:if="{{information.role==3}}">     
+      <view class="skill">
+        生活照护
+      </view>
+      <view class="skill">
+        健康管理
+      </view>
+      <view class="skill">
+        心理咨询
+      </view>
+      <view class="skill">
+        家庭康复
+      </view>
+      <view class="skill">
+        慢病管理
+      </view>
+      <view class="skill">
+        智能设备
+      </view>
+    </view>
+  </view>
+  
+  <view class="records" wx:if="{{information.role==3}}">
+    <view class="record">
+      <view class="record-num">435</view>
+      <view class="record-title">总服务时长</view>
+    </view>
+    <view class="record record-mid">
+      <view class="record-num">35</view>
+      <view class="record-title">服务雇主数</view>
+    </view>
+    <navigator url="/pages/serve/list" class="record">
+      <view class="record-num">1325</view>
+      <view class="record-title">服务日志</view>
+    </navigator>
+  </view>
+
+  <view class="grids">
+    <navigator url="/pages/employer/list"  class="grid" wx:if="{{information.role==3}}">
+      <image class="grid-image" src="/images/wodeguzhu.png"></image>
+      <view class="grid-text">我的雇主</view>
+    </navigator>
+    
+    <view class="grid">
+      <image class="grid-image" src="/images/xinwenpindao.png"></image>
+      <view class="grid-text">新闻频道</view>
+    </view>
+    <navigator url="/pages/dispatch/list" class="grid" wx:if="{{information.role==3}}">
+      <image class="grid-image" src="/images/paiqianxiaoxi.png"></image>
+      <view class="grid-text">派遣消息</view>
+    </navigator>
+    <view class="grid" wx:if="{{information.role==3}}">
+      <image class="grid-image" src="/images/jixujiaoyu.png"></image>
+      <view class="grid-text">继续教育</view>
+    </view>
+    <navigator url="/pages/train/list" class="grid" wx:if="{{information.role>0}}">
+      <image class="grid-image" src="/images/peixunjilu.png"></image>
+      <view class="grid-text">培训记录</view>
+    </navigator>
+    <view class="grid" wx:if="{{information.role==3}}">
+      <image class="grid-image" src="/images/zhiyezhengshu.png"></image>
+      <view class="grid-text">职业证书</view>
+    </view>
+    <view class="grid" wx:if="{{information.role>1}}">
+      <image class="grid-image" src="/images/kaohejilu.png"></image>
+      <view class="grid-text">考核记录</view>
+    </view>
+    <navigator url="/pages/ocr/index" class="grid" wx:if="{{information.role==3}}">
+      <image class="grid-image" src="/images/scan.png"></image>
+      <view class="grid-text">病历扫描</view>
+    </navigator>
+  </view>
+  <view class="trains">
+    <view class="train">
+      <view class="train-title">近期培训</view>
+      <view class="train-time">12-18</view>
+      <view class="train-des">培训班信息及介绍</view>
+    </view>
+    <view class="train">
+      <view class="train-title">近期考核</view>
+      <view class="train-time">12-24</view>
+      <view class="train-des">考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍</view>
+    </view>
+  </view>
+
+
+
+</view>

@@ -1,0 +1,161 @@
+<view class="container">
+  <view class="head">
+    <view class="head-illness-box">
+      <view class="illness illness-active">糖尿病</view>
+      <navigator url="/pages/webview/index" class="illness">心理咨询</navigator>
+      <view class="illness" bindtap="miniapp">银屑病</view>
+      <view class="illness-add" bindtap="ncds">
+        <image src="/images/tianjia.png"></image>
+      </view>
+    </view>    
+  </view>
+  <view class="head-time-box">
+    <view class="time-box">
+      <view class="time">
+        <image class="time-btn" src="/images/zuo.png" bindtap="timechange" data-value="-1"></image>
+      </view>
+      <view class="time">{{time}}</view>
+      <view class="time">
+        <image class="time-btn" src="/images/you.png" bindtap="timechange" data-value="1"></image>
+      </view>
+      <view class="time-choose">
+      <picker bindchange="timeChoose"  mode="date" value="{{date}}" start="2015-09-01" end="new Date()" >
+        <image src="/images/rili.png"></image>
+      </picker>
+    </view>        
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">
+      <image src="/images/yinshiqingkuang.png"></image>
+      <text>饮食情况</text>
+    </view>
+    <view class="card-content">
+      <view class="card-tag">少食多餐</view>
+      <view class="card-tag card-tag-active">戒烟戒酒</view>
+      <view class="card-tag">粗纤维食物</view>
+      <view class="card-tag card-tag-active">低升糖指数</view>
+      <view class="card-tag">低钠</view>
+      <view class="card-tag">低胆固醇</view>
+      <view class="card-tag card-tag-active">低脂肪</view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">
+      <image src="/images/yundongguanli.png"></image>
+      <text>运动</text>
+    </view>
+    <view class="card-content">
+      <view class="card-tag">跑步</view>
+      <view class="card-tag card-tag-active">主动有氧活动</view>
+      <view class="card-tag">健身操</view>
+      <view class="card-tag">太极拳</view>
+      <view class="card-tag">间歇式</view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">
+      <image src="/images/yaowuguanli.png"></image>
+      <text>服药管理</text>      
+      <image src="/images/wenhao.png"></image>
+    </view>
+    <view class="card-content">
+      <view class="card-tag">二甲双胍</view>
+      <view class="card-tag card-tag-active">度拉糖肽</view>
+    </view>
+  </view>
+
+  <view class="card">
+    <view class="card-title">
+      <image src="/images/shuju.png"></image>
+      <text>设备数据</text>
+    </view>
+    <view class="card-content">
+      <view class="card-grid">
+        <view class="grid-num-box">
+          <text class="grid-num">6.8</text>
+        </view>
+        <view class="grid-title">
+          <view class="grid-title-name">糖化血红蛋白</view>
+          <view class="grid-title-unit">%</view>
+        </view>
+      </view>
+
+      <view class="card-grid">
+        <view class="grid-num-box grid-active">
+          <text class="grid-num">7.1</text>          
+        </view>
+        <view class="grid-title">
+          <view class="grid-title-name">血糖</view>
+          <view class="grid-title-unit">%</view>
+        </view>
+      </view>
+
+      <view class="card-grid">
+        <view class="grid-num-box">
+          <text class="grid-num">104\n79</text>          
+        </view>
+        <view class="grid-title">
+          <view class="grid-title-name">血压</view>
+          <view class="grid-title-unit">mmHg</view>
+        </view>
+      </view>
+
+      <view class="card-grid">
+        <view class="grid-num-box">
+          <text class="grid-num">2.4</text>          
+        </view>
+        <view class="grid-title">
+          <view class="grid-title-name">尿白蛋白肌酐比值</view>
+          <view class="grid-title-unit">mg/mmol</view>
+        </view>
+      </view>
+
+      <view class="card-grid">
+        <view class="grid-num-box grid-active">
+          <text class="grid-num">1.8</text>          
+        </view>
+        <view class="grid-title">
+          <view class="grid-title-name">高密度脂蛋白胆固醇</view>
+          <view class="grid-title-unit">mmol/L</view>
+        </view>
+      </view>
+
+      <view class="card-grid">
+        <view class="grid-num-box">
+          <text class="grid-num">1.6</text>          
+        </view>
+        <view class="grid-title">
+          <view class="grid-title-name">甘油三酯</view>
+          <view class="grid-title-unit">mmol/L</view>
+        </view>
+      </view>
+
+      <view class="card-grid">
+        <view class="grid-num-box">
+          <text class="grid-num">2.6</text>          
+        </view>
+        <view class="grid-title">
+          <view class="grid-title-name">低密度脂蛋白胆固醇</view>
+          <view class="grid-title-unit">mmol/L</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="ncds-mask" catchtouchmove="ture" bindtap="ncds" wx:if="{{show}}">
+  <view class="ncds-content">
+    <view class="ncds-title">管理慢性病</view>
+    <scroll-view scroll-y="true" class="ncds-list" style="min-height:max-content;">
+      <block wx:for="{{ncds}}">
+        <view class="ncds-item" bindtap="check" data-index="{{index}}">
+          <view class="item-name {{item.check?'item-active':''}}">{{item.name}}</view>
+          <image wx:if="{{item.check}}" class="item-hook" src="/images/hook.png"></image>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

@@ -1,0 +1,67 @@
+/* miniprogram/pages/index/confirm.wxss */
+.head{
+  position: relative;
+  background-color: #f99303;
+  color:#fff;
+  text-align: center;
+  padding: 20rpx 20rpx 100rpx;
+}
+.head-title{
+  font-size: 36rpx;
+}
+.information{
+  position: relative;
+  top:-60rpx;
+  background-color: #fff;
+  width: 94%;
+  margin:0 auto;
+  border-radius: 20rpx;
+  padding: 50rpx 30rpx;
+  box-sizing: border-box;
+}
+.information-cell{
+  margin: 30rpx 0;
+  font-size: 36rpx;
+}
+.information-title{
+  font-size: 36rpx;
+  color:#979797;
+  display: inline-block;
+}
+.information-val{
+  color:#4F4F4F;
+  margin-left: 20rpx;
+  display: inline-block;
+}
+.information-des{
+  background-color: #f04124;
+  color: #fff;
+  font-size:30rpx;
+  padding: 10rpx 20rpx;
+  border-radius: 30rpx;
+  display: inline-block;
+  margin-left: 40rpx;
+}
+.btns{
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 30rpx;
+}
+.btn{
+  flex:1;
+  margin: 0 30rpx;
+  border-radius: 60rpx;
+  padding: 20rpx 0;  
+}
+.btn-cancle{
+  border: 1rpx solid #9a9a9a;
+  color: #9a9a9a;
+  background-color: #fff;
+}
+.btn-primary{
+  background-color: #f99303;
+  color: #fff;
+}

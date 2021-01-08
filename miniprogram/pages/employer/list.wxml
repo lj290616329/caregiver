@@ -1,0 +1,171 @@
+<view class="container">
+  <view class="order-box">
+    <view class="order-title"><image class="title-icon" src="/images/guzhu.png"></image>雇主1</view>
+    <view class="order-list">
+      <navigator url="/pages/employer/detail" class="order">
+        <image class="order-head" src="/images/headimg.png"></image>
+        <view class="order-des">
+          <view class="order-name">
+            <view class="name-lf lager-font">李漂亮</view>
+            <view class="name-rt mini-font">
+              剩余服务时长:
+              <text class="order-day middle-font">23天</text>
+            </view>
+          </view>
+          <view class="order-name small-font">
+            <view class="name-lf">服务时长:256天</view>
+            <view class="name-rt">
+              最后服务:昨天
+            </view>
+          </view>
+        </view>
+        <view class="order-type">
+          <text class="type-home">住家</text>
+        </view>
+      </navigator>
+      <navigator url="/pages/employer/detail" class="order">
+        <image class="order-head" src="/images/headimg.png"></image>
+        <view class="order-des">
+          <view class="order-name">
+            <view class="name-lf lager-font">李漂亮</view>
+            <view class="name-rt mini-font">
+              剩余服务时长:
+              <text class="order-day middle-font">23天</text>
+            </view>
+          </view>
+          <view class="order-name small-font">
+            <view class="name-lf">服务时长:256天</view>
+            <view class="name-rt">
+              最后服务:昨天
+            </view>
+          </view>
+        </view>
+        <view class="order-type">
+          <text class="type-time">分时</text>
+        </view>   
+      </navigator>
+    </view>   
+  
+    <view class="order-title"><image class="title-icon" src="/images/guzhu.png"></image>雇主1</view>
+    <view class="order-list">
+      <navigator url="/pages/employer/detail" class="order">
+        <image class="order-head" src="/images/headimg.png"></image>
+        <view class="order-des">
+          <view class="order-name">
+            <view class="name-lf lager-font">李漂亮</view>
+            <view class="name-rt mini-font">
+              剩余服务时长:
+              <text class="order-day middle-font">23天</text>
+            </view>
+          </view>
+          <view class="order-name small-font">
+            <view class="name-lf">服务时长:256天</view>
+            <view class="name-rt">
+              最后服务:昨天
+            </view>
+          </view>
+        </view>
+        <view class="order-type">
+          <text class="type-home">住家</text>
+        </view>
+      </navigator>
+
+      <navigator url="/pages/employer/detail" class="order">
+        <image class="order-head" src="/images/headimg.png"></image>
+        <view class="order-des">
+          <view class="order-name">
+            <view class="name-lf lager-font">李漂亮</view>
+            <view class="name-rt mini-font">
+              剩余服务时长:
+              <text class="order-day middle-font">23天</text>
+            </view>
+          </view>
+          <view class="order-name small-font">
+            <view class="name-lf">服务时长:256天</view>
+            <view class="name-rt">
+              最后服务:昨天
+            </view>
+          </view>
+        </view>
+        <view class="order-type">
+          <text class="type-home">住家</text>
+        </view>
+      </navigator>      
+    </view>
+  </view>
+
+  <view class="order-box">
+    <view class="order-title order-history"><image class="title-icon" src="/images/lishi.png"></image>历史</view>
+    <view class="order-list">
+      <navigator url="/pages/employer/detail" class="order">
+        <image class="order-head" src="/images/headimg.png"></image>
+        <view class="order-des">
+          <view class="order-name order-history">
+            <view class="name-lf">
+              李漂亮
+            </view>
+            <view class="name-rt">
+              <view class="order-type type-history">
+                <text class="type-time">分时</text>
+              </view>
+            </view>            
+          </view>
+          <view class="order-name small-font order-history">
+            <view class="name-lf">服务时长:256天</view>
+            <view class="name-rt">
+              最后服务:2019/09/08
+            </view>
+          </view>          
+        </view>
+      </navigator>
+
+
+      <navigator url="/pages/employer/detail" class="order">
+        <image class="order-head" src="/images/headimg.png"></image>
+        <view class="order-des">
+          <view class="order-name order-history">
+            <view class="name-lf">
+              李漂亮
+            </view>
+            <view class="name-rt">
+              <view class="order-type type-history">
+                <text class="type-time">分时</text>
+              </view>
+            </view>            
+          </view>
+          <view class="order-name small-font order-history">
+            <view class="name-lf">服务时长:256天</view>
+            <view class="name-rt">
+              最后服务:2019/09/08
+            </view>
+          </view>          
+        </view>
+      </navigator>
+
+      <navigator url="/pages/employer/detail" class="order">
+        <image class="order-head" src="/images/headimg.png"></image>
+        <view class="order-des">
+          <view class="order-name order-history">
+            <view class="name-lf">
+              李漂亮
+            </view>
+            <view class="name-rt">
+              <view class="order-type type-history">
+                <text class="type-time">分时</text>
+              </view>
+            </view>            
+          </view>
+          <view class="order-name small-font order-history">
+            <view class="name-lf">服务时长:256天</view>
+            <view class="name-rt">
+              最后服务:2019/09/08
+            </view>
+          </view>          
+        </view>
+      </navigator>
+      
+    </view>
+  </view>
+
+
+</view>

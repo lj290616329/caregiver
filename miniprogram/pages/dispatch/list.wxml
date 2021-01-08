@@ -1,0 +1,60 @@
+<view class="container">
+  <view class="head"></view>
+  <view class="content">
+    <navigator url="/pages/dispatch/detail" class="card">
+      <view class="card-title">孕产妇</view>
+      <view class="card-des">
+        <view class="card-tag">
+          <view class="card-type type1">住家</view>
+          <view class="card-status status1">待确认</view>
+        </view>
+        <view class="card-time">2020-12-27 16:23</view>
+      </view>
+    </navigator>
+
+    <navigator url="/pages/dispatch/detail" class="card">
+      <view class="card-title">孕产妇</view>
+      <view class="card-des">
+        <view class="card-tag">
+          <view class="card-type type2">住家</view>
+          <view class="card-status status2">待确认</view>
+        </view>
+        <view class="card-time">2020-12-27 16:23</view>
+      </view>
+    </navigator>
+
+    <navigator url="/pages/dispatch/detail" class="card">
+      <view class="card-title">孕产妇</view>
+      <view class="card-des">
+        <view class="card-tag">
+          <view class="card-type type1">住家</view>
+          <view class="card-status status1">待确认</view>
+        </view>
+        <view class="card-time">2020-12-27 16:23</view>
+      </view>
+    </navigator>
+
+    <navigator url="/pages/dispatch/detail" class="card">
+      <view class="card-title">孕产妇</view>
+      <view class="card-des">
+        <view class="card-tag">
+          <view class="card-type type2">住家</view>
+          <view class="card-status status2">待确认</view>
+        </view>
+        <view class="card-time">2020-12-27 16:23</view>
+      </view>
+    </navigator>
+
+    <navigator url="/pages/dispatch/detail" class="card">
+      <view class="card-title">孕产妇</view>
+      <view class="card-des">
+        <view class="card-tag">
+          <view class="card-type type1">住家</view>
+          <view class="card-status status3">待确认</view>
+        </view>
+        <view class="card-time">2020-12-27 16:23</view>
+      </view>
+    </navigator>
+
+  </view>
+</view>
