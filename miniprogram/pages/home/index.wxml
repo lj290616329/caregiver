@@ -92,13 +92,22 @@
   <view class="trains">
     <view class="train">
       <view class="train-title">近期培训</view>
-      <view class="train-time">12-18</view>
-      <view class="train-des">培训班信息及介绍</view>
+      <view class="train-time">2020-12-31</view>
+      <view class="train-des">
+        <view>天津市第四中心医院</view>
+        <view>四级照护师</view>
+        <view>定向招录</view>
+      </view>
     </view>
     <view class="train">
       <view class="train-title">近期考核</view>
-      <view class="train-time">12-24</view>
-      <view class="train-des">考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍考核班信息及介绍</view>
+      <view class="train-time">2021-04-01</view>
+      <view class="train-des">
+        <view>中国研究型医院学会</view>
+        <view>四级照护师</view>
+        <view>定向招录</view>
+        <view>点击报名</view>
+      </view>
     </view>
   </view>
 
