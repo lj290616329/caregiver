@@ -120,3 +120,58 @@ page {
   line-height: 1.4rem;
   left: 2%;
 }
+
+radio{ 
+  border-radius: 50%;
+  width: 36rpx;/* 最好是4的倍数，不然会不在中间 */
+  height: 36rpx;
+  border: 2rpx solid #f99303;/* 设置边框（外圆） */
+  font-size: 0;/* 让边框重合 */
+}
+
+radio .wx-radio-input{
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 36rpx;
+  height: 36rpx; 
+  border: none;/* 替换边框（隐藏原有边框） */
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before{ 
+  border-radius: 50%;/* 圆角 */
+  width: 28rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 28rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 36rpx;
+  text-align: center;
+  font-size:0; /* 对勾大小 30rpx */
+  color:#f99303; /* 对勾颜色 白色 */
+  background: #f99303;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}
+
+
+
+checkbox .wx-checkbox-input{
+  border-radius: 50%;/* 圆角 */
+  width: 36rpx; /* 背景的宽 */
+  height: 36rpx; /* 背景的高 */
+}
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  border-color: #f99303;
+  background: #f99303;
+}
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  border-radius: 50%;/* 圆角 */
+  width: 36rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 36rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 36rpx;
+  text-align: center;
+  font-size:28rpx; /* 对勾大小 30rpx */
+  color:#fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}

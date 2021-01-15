@@ -1,0 +1,22 @@
+<view class="container">
+  <view class="title">
+    运动小贴士
+  </view>
+  <view class="sport-advise">
+    <view class="advise">
+      随身携带应急升糖食品、饮用水和糖尿病保健卡（注明：本人的姓名、年龄、庭住址和家属的联系方式等）；
+    </view>
+    <view class="advise">
+      运动时必须穿着合适的运动鞋，预防足部损伤。要经常检查鞋中是否有异物，及时清理以防硌伤；
+    </view>
+    <view class="advise">
+      运动前测血糖，若低于5.6mmol/L时，应摄入额外碳水化合物后运动，若超过16.7mmol/L时应避免运动。
+    </view>
+    <view class="advise">
+      运动后要测血糖，用于了解运动对您血糖的影响；
+    </view>
+    <view class="advise">
+      如出现糖尿病酮症酸中毒等急性代谢并发症。合并急性感染、一过性脑缺血时，请您立即停止运动，待病情控制稳定后咨询教育者或医师方可逐步恢复运动。
+    </view>
+  </view>
+</view>

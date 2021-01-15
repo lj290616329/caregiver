@@ -1,0 +1,250 @@
+<view class="container">
+  <view class="card">    
+    <view class="card-type">医嘱</view>
+    <view class="card-advices">
+      <view class="advice-item">
+        <view class="advice-title">二甲双胍</view>
+        <view class="advice-val">口服，一日两次，一次0.5g</view>
+      </view>
+      <!-- <view class="advice-item">
+        <view class="advice-title">二甲双胍</view>
+        <view class="advice-val">口服，一日两次，一次0.5g</view>
+      </view>
+      <view class="advice-item">
+        <view class="advice-title">二甲双胍</view>
+        <view class="advice-val">口服，一日两次，一次0.5g</view>
+      </view> -->
+    </view>
+    <view class="card-type">控制目标</view>
+    <view class="card-target">
+      <view class="target-title-box">
+        <view class="target-title flex2">项目</view>
+        <view class="target-title">目标</view>
+      </view>
+      <view class="target-content">
+        <view class="target-item">
+          <view class="target-name">空腹血糖(mmol/L)</view>
+          <view class="target-val">4.4-7</view>
+        </view>
+        <view class="target-item">
+          <view class="target-name">非空腹血糖(mmol/L)</view>
+          <view class="target-val">4.4-10</view>
+        </view>
+        <view class="target-item">
+          <view class="target-name">糖化血红蛋白(%)</view>
+          <view class="target-val">＜7</view>
+        </view>
+        <view class="target-item">
+          <view class="target-name">血压(mmHg)</view>
+          <view class="target-val">＜130/80</view>
+        </view>
+        <view class="target-item">
+          <view class="target-name">总胆固醇(mmol/L)</view>
+          <view class="target-val">＜4.5</view>
+        </view>
+        <view class="target-item">
+          <view class="target-name">甘油三酯(mmol/L)</view>
+          <view class="target-val">＜1.7</view>
+        </view>
+        <view class="target-item">
+          <view class="target-name">高密度脂蛋白胆固醇
+(mmol/L)</view>
+          <view class="target-val">＞1.0</view>
+        </view>
+        <view class="target-item">
+          <view class="target-name">低密度脂蛋白胆固醇
+(mmol/L)</view>
+          <view class="target-val">＜2.6</view>
+        </view>
+      </view>
+    </view>
+
+    <view class="card-type">
+      体重目标
+      <view class="des-val">75</view>
+      <view class="des-unit">kg</view>
+    </view>
+    
+
+    <view class="card-type">
+      饮食方案
+    </view>
+    <view class="card-categories">
+        <view class="category-item">
+          <view class="category-title">谷薯类</view>
+          <view class="category-val">100</view>
+          <view class="category-unit">份</view>          
+        </view>
+        <view class="category-item">
+          <view class="category-title">蔬菜类</view>
+          <view class="category-val">100</view>
+          <view class="category-unit">份</view>
+        </view>
+        <view class="category-item">
+          <view class="category-title">水果类</view>
+          <view class="category-val">100</view>
+          <view class="category-unit">份</view>
+        </view>
+        <view class="category-item">
+          <view class="category-title">豆乳类</view>
+          <view class="category-val">100</view>
+          <view class="category-unit">份</view>
+        </view>
+        <view class="category-item">
+          <view class="category-title">肉蛋类</view>
+          <view class="category-val">100</view>
+          <view class="category-unit">份</view>
+        </view>
+        <view class="category-item">
+          <view class="category-title">油脂类</view>
+          <view class="category-val">100</view>
+          <view class="category-unit">份</view>
+        </view>        
+      </view>
+      <view class="card-type">有氧运动</view>
+      <view class="card-checks">
+        <view class="check-item check-item-active">快走</view>
+        <view class="check-item">慢跑</view>
+        <view class="check-item">健身操</view>
+        <view class="check-item check-item-active">骑车</view>
+        <view class="check-item">游泳</view>
+        <view class="check-item">羽毛球</view>
+        <view class="check-item">兵乓球</view>
+        <view class="check-item">跳绳</view>
+      </view>
+      <view class="card-des">
+        <view class="des-title">运动时长</view>
+        <view class="des-val">120</view>
+        <view class="des-unit">分钟/次</view>
+      </view>
+      <view class="card-des">
+        <view class="des-title">运动频率</view>
+        <view class="des-val">2</view>
+        <view class="des-unit">次/周</view>
+        <view class="des-unit">已完成:</view>
+        <view class="des-unit">2次</view>
+      </view>
+
+      <view class="card-type">血糖检测方案</view>
+
+      <view class="bloodsugar-box">
+        <view class="bloodsugar-item">
+          <view class="flex2">
+            <view class="week">日期/时间</view>
+          </view>
+          <view class="bloodsugar-title flex1">空腹</view>
+          <view class="bloodsugar-title flex1">日期</view>
+          <view class="bloodsugar-title flex1">早餐前</view>
+          <view class="bloodsugar-title flex1">早餐后</view>
+          <view class="bloodsugar-title flex1">午餐前</view>
+          <view class="bloodsugar-title flex1">午餐后</view>
+          <view class="bloodsugar-title flex1">晚餐前</view>
+          <view class="bloodsugar-title flex1">晚餐后</view>
+        </view>
+        <view class="bloodsugar-item">
+          <view class="flex2">
+            <view class="week">周一</view>
+            <view class="day">2021/1/4</view>
+          </view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft bright flex1"></view>
+        </view>
+        <view class="bloodsugar-item">
+          <view class="flex2">
+            <view class="week">周二</view>
+            <view class="day">2021/1/5</view>
+          </view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft bright flex1"></view>
+        </view>
+        <view class="bloodsugar-item">
+          <view class="flex2">
+            <view class="week">周三</view>
+            <view class="day">2021/1/6</view>
+          </view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1">✓</view>
+          <view class="btop bleft flex1">✗</view>
+          <view class="btop bleft flex1">✓</view>
+          <view class="btop bleft flex1">✗</view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft bright flex1"></view>
+        </view>
+        <view class="bloodsugar-item">
+          <view class="flex2">
+            <view class="week">周四</view>
+            <view class="day">2021/1/7</view>
+          </view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1">✓</view>
+          <view class="btop bleft flex1">✗</view>
+          <view class="btop bleft flex1">✓</view>
+          <view class="btop bleft flex1">✗</view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft bright flex1"></view>
+        </view>
+        <view class="bloodsugar-item">
+          <view class="flex2">
+            <view class="week">周五</view>
+            <view class="day">2021/1/8</view>
+          </view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft bright flex1"></view>
+        </view>
+        <view class="bloodsugar-item">
+          <view class="flex2">
+            <view class="week">周六</view>
+            <view class="day">2021/1/9</view>
+          </view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1"></view>
+          <view class="btop bleft flex1">✓</view>
+          <view class="btop bleft flex1">✗</view>
+          <view class="btop bleft flex1">✓</view>
+          <view class="btop bleft flex1">✗</view>
+          <view class="btop bleft bright flex1"></view>
+        </view>
+        <view class="bloodsugar-item">
+          <view class="flex2">
+            <view class="week">周日</view>
+            <view class="day">2021/1/10</view>
+          </view>
+          <view class="btop bleft bbottom flex1"></view>
+          <view class="btop bleft bbottom flex1"></view>
+          <view class="btop bleft bbottom flex1"></view>
+          <view class="btop bleft bbottom flex1"></view>
+          <view class="btop bleft bbottom flex1"></view>
+          <view class="btop bleft bbottom flex1"></view>
+          <view class="btop bleft bbottom flex1"></view>
+          <view class="btop bleft bbottom bright flex1"></view>
+        </view>
+        
+      </view>
+      <view class="card-item" bindtap="back">
+        <view class="card-submit-btn">确认</view>
+      </view>
+
+  </view>
+
+</view>

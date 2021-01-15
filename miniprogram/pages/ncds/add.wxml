@@ -1,0 +1,385 @@
+<wxs src="../../utils/util.wxs" module="util"/>
+<view class="container">
+  
+  <view class="card">
+    <view class="card-title">
+      基本信息&医嘱
+    </view>
+    <view class="card-type">
+      糖尿病类型
+    </view>
+    <view class="card-item">
+      <radio-group class="radio-box">
+        <view class="radio-item">        
+          <label class="radio-lable">
+            <radio color="#fff" value="1"/>
+            <text>1型</text>       
+          </label>
+        </view>
+        <view class="radio-item">   
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>2型</text>           
+          </label>
+        </view>
+        <view class="radio-item"> 
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>妊娠型</text>           
+          </label>
+        </view>
+      </radio-group>
+      <view class="card-des">
+        <view class="des-title">病程</view>
+        <input type="number" class="des-val min-input"/>
+        
+        <view class="des-unit">年</view>
+      </view>
+    </view>
+
+
+    <view class="card-type">
+      合并症
+    </view>
+    <view class="card-item">
+      <view class="card-tag {{util.indexOf(tags,'高血压')?'card-tag-active':''}}" bindtap="tag" data-val="高血压">高血压</view>
+      <view class="card-tag {{util.indexOf(tags,'高血脂')?'card-tag-active':''}}" bindtap="tag" data-val="高血脂">高血脂</view>
+      <view class="card-tag {{util.indexOf(tags,'冠心病')?'card-tag-active':''}}" bindtap="tag" data-val="冠心病">冠心病</view>
+      <view class="card-tag {{util.indexOf(tags,'脑血管疾病')?'card-tag-active':''}}" bindtap="tag" data-val="脑血管疾病">脑血管疾病</view>
+    </view>
+    
+      
+    
+    
+
+    <view class="card-type">
+      并发症
+    </view>
+    <view class="card-item">
+      <view class="card-tag {{util.indexOf(tags,'糖尿病肾病')?'card-tag-active':''}}" bindtap="tag" data-val="糖尿病肾病">糖尿病肾病</view>
+      <view class="card-tag {{util.indexOf(tags,'糖尿病视网膜病变')?'card-tag-active':''}}" bindtap="tag" data-val="糖尿病视网膜病变">糖尿病视网膜病变</view>
+      <view class="card-tag {{util.indexOf(tags,'下肢血管病变')?'card-tag-active':''}}" bindtap="tag" data-val="下肢血管病变">下肢血管病变</view>
+      <view class="card-tag {{util.indexOf(tags,'糖尿病周围神经病变')?'card-tag-active':''}}" bindtap="tag" data-val="糖尿病周围神经病变">糖尿病周围神经病变</view>
+      <view class="card-tag {{util.indexOf(tags,'糖尿病足')?'card-tag-active':''}}" bindtap="tag" data-val="糖尿病足">糖尿病足</view>
+    </view>
+
+    <view class="card-type">
+      目前治疗方式
+    </view>
+    <view class="card-item">
+      <view class="card-tag {{util.indexOf(tags,'生活方式干预')?'card-tag-active':''}}" bindtap="tag" data-val="生活方式干预">生活方式干预</view>
+      <view class="card-tag {{util.indexOf(tags,'口服药治疗')?'card-tag-active':''}}" bindtap="tag" data-val="口服药治疗">口服药治疗</view>
+      <view class="card-tag {{util.indexOf(tags,'胰岛素注射治疗')?'card-tag-active':''}}" bindtap="tag" data-val="胰岛素注射治疗">胰岛素注射治疗</view>
+      <view class="card-tag {{util.indexOf(tags,'GLP-1注射治疗')?'card-tag-active':''}}" bindtap="tag" data-val="GLP-1注射治疗">GLP-1注射治疗</view>
+    </view>
+    <view class="card-type">
+      医嘱处方
+    </view>
+    <view class="card-item">
+      <navigator url="/pages/ncds/prescribe" class="card-submit-btn">导入</navigator>
+    </view>
+    <view class="card-line"></view>   
+    <view class="card-title">
+      照护师评估
+    </view>
+    <view class="card-type">
+      资源利用评估
+    </view>
+    <view class="card-item">
+      <radio-group class="radio-box">
+        <view class="radio-item">
+          <label class="radio-title">教育水平</label>
+        </view>           
+        <view class="radio-item"> 
+          <label class="radio-lable">
+            <radio color="#fff" value="1"/>
+            <text>高中</text>       
+          </label>
+        </view>
+        <view class="radio-item"> 
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>大专</text>           
+          </label>
+        </view>
+        <view class="radio-item"> 
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>本科</text>           
+          </label>
+        </view>
+      </radio-group>
+
+      <view class="card-des">
+        <view class="des-title">职业</view>
+        <view class="des-val"><input class="lg-input" type="number"/></view>
+      </view>
+
+      <view class="card-des">
+        <view class="des-title">医保类型</view>
+        <view class="des-val">
+          <picker class="card-picker" mode="selector" value="{{index}}" range="{{medicaltypes}}" bindchange="pickerChange">
+            <view class="picker-val">{{medicaltypes[index]}}</view>
+          </picker>
+        </view>
+      </view>
+
+      <radio-group class="radio-box">
+        <view class="radio-item">
+          <label class="radio-title">主要照顾者</label>
+        </view>
+        
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="1"/>
+            <text>爱人</text>       
+          </label>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>子女</text>           
+          </label>
+        </view>
+      </radio-group>
+      
+      <view class="card-tag {{util.indexOf(tags,'独居')?'card-tag-active':''}}" bindtap="tag" data-val="独居">独居</view>
+      <view class="card-tag {{util.indexOf(tags,'既往定期复诊')?'card-tag-active':''}}" bindtap="tag" data-val="既往定期复诊">既往定期复诊</view>
+      <view class="card-tag {{util.indexOf(tags,'既往接受过糖尿病教育')?'card-tag-active':''}}" bindtap="tag" data-val="既往接受过糖尿病教育">既往接受过糖尿病教育</view>
+      <view class="card-tag {{util.indexOf(tags,'既往发生低血糖')?'card-tag-active':''}}" bindtap="tag" data-val="既往发生低血糖">既往发生低血糖</view>
+      <view class="card-tag {{util.indexOf(tags,'既往发生无症状低血糖')?'card-tag-active':''}}" bindtap="tag" data-val="既往发生无症状低血糖">既往发生无症状低血糖</view>
+    </view>
+    <view class="card-type">
+      生活方式评估
+    </view>
+    
+    <view class="card-item">
+      <view class="item-title">饮食习惯</view>
+      <radio-group class="radio-box">
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="1"/>
+            <text>主食偏多</text>       
+          </label>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>偏素</text>           
+          </label>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>偏荤</text>           
+          </label>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>油炸</text>           
+          </label>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>糕点甜品</text>           
+          </label>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>含糖饮料</text>           
+          </label>
+        </view>
+      </radio-group>
+
+
+      <view class="item-title">运动习惯</view>
+      <radio-group class="radio-box">
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="1"/>
+            <text>轻体力活动</text>       
+          </label>
+          <view class="lable-sup">（办公室职员、教师、售货员、简单家务）</view>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="1"/>
+            <text>中等体力活动</text>       
+          </label>
+          <view class="lable-sup">（学生、司机、外科医生、体育教师、一般农活 ）</view>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="1"/>
+            <text>重体力活动</text>       
+          </label>
+          <view class="lable-sup">（建筑工、搬运工、冶炼工、运动员、舞蹈者等）</view>
+        </view>        
+      </radio-group>
+
+      <radio-group class="radio-box">
+        <view class="radio-item">
+          <label class="radio-title">有无体育锻炼习惯</label>
+        </view>
+        
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="1"/>
+            <text>有</text>       
+          </label>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>无</text>           
+          </label>
+        </view>
+      </radio-group>
+      <view class="card-des">
+        <view class="des-title">睡眠</view>
+        <input type="number" class="des-val min-input"/>
+        <view class="des-unit">小时/天</view>
+      </view>
+
+      <radio-group class="radio-box">
+        <view class="radio-item">
+          <label class="radio-title">抽烟</label>
+        </view>
+        
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="1"/>
+            <text>是</text>       
+          </label>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>否</text>           
+          </label>
+        </view>
+      </radio-group>
+
+      <radio-group class="radio-box">
+        <view class="radio-item">
+          <label class="radio-title">饮酒</label>
+        </view>
+        
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="1"/>
+            <text>是</text>       
+          </label>
+        </view>
+        <view class="radio-item">
+          <label class="radio-lable">
+            <radio color="#fff" value="2"/>
+            <text>否</text>           
+          </label>
+        </view>
+      </radio-group>
+
+      <checkbox-group class="check-box">
+        <view class="check-item">
+          <label class="check-lable">          
+            <checkbox/>          
+            <text>糖尿病自我管理知识缺乏</text>
+          </label>
+        </view>
+        
+        <view class="check-item">
+          <label class="check-lable">   
+            <checkbox/>          
+            <text>糖尿病自我管理态度消极</text>
+          </label>
+        </view>
+        
+        <view class="check-item">
+          <label class="check-lable">         
+            <checkbox/>          
+            <text>糖尿病自我管理行为差</text>
+          </label>
+        </view>
+        
+        <view class="check-item">
+          <label class="check-lable">        
+            <checkbox/>          
+            <text>饮食管理不佳</text>
+          </label>
+        </view>
+        
+        <view class="check-item">
+          <label class="check-lable">      
+            <checkbox/>          
+            <text>运动管理不佳</text>
+          </label>
+        </view>
+        
+        <view class="check-item">
+          <label class="check-lable">       
+            <checkbox/>          
+            <text>运动管理不佳</text>
+          </label>
+        </view>
+        
+        <view class="check-item">
+          <label class="check-lable">        
+            <checkbox/>          
+            <text>运动管理不佳</text>
+          </label>
+        </view>
+        
+        <view class="check-item">
+          <label class="check-lable"> 
+            <checkbox/>          
+            <text>睡眠差</text>
+          </label>
+        </view> 
+        <view class="check-item">
+          <label class="check-lable"> 
+            <checkbox/>          
+            <text>吸烟不良嗜好</text>
+          </label>
+        </view> 
+        <view class="check-item">
+          <label class="check-lable"> 
+            <checkbox/>          
+            <text>饮酒不良嗜好</text>
+          </label>
+        </view> 
+        <view class="check-item">
+          <label class="check-lable"> 
+            <checkbox/>          
+            <text>用药依从性差</text>
+          </label>
+        </view> 
+        <view class="check-item">
+          <label class="check-lable"> 
+            <checkbox/>          
+            <text>家庭支持系统差</text>
+          </label>
+        </view> 
+        <view class="check-item">
+          <label class="check-lable"> 
+            <checkbox/>          
+            <text>经济困难</text>
+          </label>
+        </view>
+        <view class="check-item">
+          <label class="check-lable"> 
+            <checkbox/>          
+            <text>焦虑/抑郁</text>
+          </label>
+        </view>
+      </checkbox-group>
+
+
+    </view>
+    <view class="card-item" bindtap="submit">
+      <view class="card-submit-btn">提交</view>
+    </view>
+  </view>
+</view>

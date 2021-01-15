@@ -1,0 +1,59 @@
+<view class="container">
+  <view class="title">
+    等热量谷薯类食物交换表
+  </view>
+  <view class="food-table">
+    <view class="table-title">
+      <view class="table-name">食物名称</view>
+      <view class="table-val">克</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">大米、小米、糯米、薏米</view>
+      <view class="food-val">25</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">高粱米、玉米糁、玉米面</view>
+      <view class="food-val">25</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">面粉、米粉、混合面</view>
+      <view class="food-val">25</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">挂面、龙须面、燕麦片</view>
+      <view class="food-val">25</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">莜麦面、荞麦面、苦荞面</view>
+      <view class="food-val">25</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">通心粉、干粉条、干莲子</view>
+      <view class="food-val">25</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">苏打饼干</view>
+      <view class="food-val">25</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">绿豆、红豆、芸豆、干豌豆</view>
+      <view class="food-val">25</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">烧饼、烙饼、馒头</view>
+      <view class="food-val">35</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">咸面包、窝头、切面</view>
+      <view class="food-val">35</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">土豆、芋头</view>
+      <view class="food-val">100</view>
+    </view>
+    <view class="food-item">
+      <view class="food-name">湿粉皮</view>
+      <view class="food-val">150</view>
+    </view>
+  </view>
+</view>

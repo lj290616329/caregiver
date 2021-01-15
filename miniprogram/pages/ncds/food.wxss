@@ -1,0 +1,38 @@
+page{
+  background-color: #fff;
+}
+.title{
+  font-size: 36rpx;
+  color: #333333;
+  height: 140rpx;
+  line-height: 140rpx;
+  text-align: center;
+}
+
+.food-table{
+  text-align: center;
+  border: solid 3rpx #eeeeee;
+  margin: 0 50rpx;
+  border-bottom: none;
+}
+.table-title,.food-item{
+  display: flex;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-bottom: solid 3rpx #eeeeee;
+}
+.table-name,.food-name{
+  flex:5;
+  border-right: solid 3rpx #eeeeee;
+}
+.table-val,.food-val{
+  flex:1;
+}
+.table-title{
+  font-size: 32rpx;
+  color: #777;
+}
+.food-item{
+  font-size: 30rpx;
+	color: #333;
+}

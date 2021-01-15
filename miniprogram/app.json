@@ -1,9 +1,16 @@
 {
   "pages": [
+    
     "pages/index/login",
+    "pages/ncds/main",
+    "pages/ncds/add", 
+       
+    "pages/ncds/sport",
+    "pages/ncds/food",
+    "pages/ncds/prescribe",
+    
     "pages/ocr/index",
     "pages/ncds/index",
-    
     "pages/index/confirm",
     "pages/train/list",
     "pages/serve/add",

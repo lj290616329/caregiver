@@ -98,7 +98,7 @@
   </view>
 
   <view class="btns">
-    <navigator  url="/pages/ncds/index" class="btn">慢病管理</navigator>
+    <navigator  url="/pages/ncds/main" class="btn">慢病管理</navigator>
   </view>
 
 

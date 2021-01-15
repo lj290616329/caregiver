@@ -23,7 +23,7 @@
           <text class="type-home">住家</text>
         </view>
       </navigator>
-      <navigator url="/pages/employer/detail" class="order">
+      <!-- <navigator url="/pages/employer/detail" class="order">
         <image class="order-head" src="/images/headimg.png"></image>
         <view class="order-des">
           <view class="order-name">
@@ -43,10 +43,10 @@
         <view class="order-type">
           <text class="type-time">分时</text>
         </view>   
-      </navigator>
+      </navigator> -->
     </view>   
   
-    <view class="order-title"><image class="title-icon" src="/images/guzhu.png"></image>雇主1</view>
+    <view class="order-title"><image class="title-icon" src="/images/guzhu.png"></image>雇主2</view>
     <view class="order-list">
       <navigator url="/pages/employer/detail" class="order">
         <image class="order-head" src="/images/headimg.png"></image>
@@ -70,7 +70,7 @@
         </view>
       </navigator>
 
-      <navigator url="/pages/employer/detail" class="order">
+      <!-- <navigator url="/pages/employer/detail" class="order">
         <image class="order-head" src="/images/headimg.png"></image>
         <view class="order-des">
           <view class="order-name">
@@ -90,7 +90,7 @@
         <view class="order-type">
           <text class="type-home">住家</text>
         </view>
-      </navigator>      
+      </navigator>       -->
     </view>
   </view>
 
@@ -120,7 +120,7 @@
       </navigator>
 
 
-      <navigator url="/pages/employer/detail" class="order">
+      <!-- <navigator url="/pages/employer/detail" class="order">
         <image class="order-head" src="/images/headimg.png"></image>
         <view class="order-des">
           <view class="order-name order-history">
@@ -162,7 +162,7 @@
             </view>
           </view>          
         </view>
-      </navigator>
+      </navigator> -->
       
     </view>
   </view>

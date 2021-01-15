@@ -1,0 +1,269 @@
+<wxs src="../../utils/util.wxs" module="util"/>
+<view class="container">
+  <view class="head">
+    <scroll-view class="head-illness-box" scroll-x>
+      <block wx:for="{{check_ncds}}">
+        <view class="illness {{index==0?'illness-active':''}}" >{{item}}</view>
+      </block>      
+      <navigator url="/pages/webview/index" class="illness">心理咨询</navigator>
+      <view class="illness" bindtap="miniapp">银屑病</view>
+
+    </scroll-view> 
+    <view class="illness-add" bindtap="ncds">
+      <image src="/images/tianjia.png"></image>
+    </view>   
+  </view>
+  <view class="content" wx:if="{{check_ncds.length>0}}">
+    <view class="head-time-box">
+      <view class="time-box">
+        <view class="time">
+          <image class="time-btn" src="/images/zuo.png" bindtap="timechange" data-value="-1"></image>
+        </view>
+        <view class="time">{{time}}</view>
+        <view class="time">
+          <image class="time-btn" src="/images/you.png" bindtap="timechange" data-value="1"></image>
+        </view>
+        <view class="time-choose">
+        <picker bindchange="timeChoose"  mode="date" value="{{date}}" start="2015-09-01" end="new Date()" >
+          <image src="/images/rili.png"></image>
+        </picker>
+      </view>        
+      </view>
+    </view>
+
+    <view class="card">
+      <view class="card-title">
+        <image src="/images/shuju.png"></image>
+        <text>血糖监测</text>
+        <navigator url="/pages/ncds/prescribe" class="card-sup">
+          <view class="card-sup-text">处方</view>
+          <image src="/images/wenhao.png"></image>
+        </navigator>
+      </view>
+
+
+
+
+
+
+
+      <view class="card-content">
+        <view class="card-categories">
+          <view class="category-item">
+            <text class="category-title" decode="true">空&ensp;&ensp;腹</text>
+            <input class="des-val" type="number" value="100"/>
+          </view>
+          <view class="category-item">
+            <text class="category-title">午餐前</text>
+            <input class="des-val" type="number" value="100"/>
+          </view>
+          <view class="category-item">
+            <text class="category-title">早餐后</text>
+            <input class="des-val" type="number" value="100"/>
+          </view>
+          <view class="category-item">
+            <text class="category-title">午餐后</text>
+            <input class="des-val" type="number" value="100"/>
+          </view>
+          <view class="category-item">
+            <text class="category-title">晚餐前</text>
+            <input class="des-val" type="number" value="100"/>
+          </view>
+          <view class="category-item">
+            <text class="category-title">晚餐后</text>
+            <input class="des-val" type="number" value="100"/>
+          </view>
+          <view class="category-item">
+            <text class="category-title" decode="true">睡&ensp;&ensp;前</text>
+            <input class="des-val" type="number" value="100"/>
+          </view>
+        </view>
+        <view class="card-des">
+          <text class="des-title" decode="true">体&ensp;&ensp;重</text>          
+          <input class="des-val" type="number" value="100"/>
+          
+          <view class="des-unit">kg</view>
+        </view>
+      </view>
+    </view>
+    <view class="card">
+      <view class="card-title">
+        <image src="/images/yinshiqingkuang.png"></image>
+        <text>饮食</text>
+        <navigator url="/pages/ncds/food" class="card-sup">
+          <view class="card-sup-text">等热量食物交换表</view>
+          <image src="/images/wenhao.png"></image>
+        </navigator>
+      </view>
+      <view class="card-content">
+        <view class="card-categories">
+          <view class="category-item">
+            <view class="category-title">谷薯类</view>
+            <input class="category-val" type="number" value="100"/>
+            <view class="category-unit">份</view>          
+          </view>
+          <view class="category-item">
+            <view class="category-title">蔬菜类</view>
+            <input class="category-val" type="number" value="100"/>
+            <view class="category-unit">份</view>
+          </view>
+          <view class="category-item">
+            <view class="category-title">水果类</view>
+            <input class="category-val" type="number" value="100"/>
+            <view class="category-unit">份</view>
+          </view>
+          <view class="category-item">
+            <view class="category-title">豆乳类</view>
+            <input class="category-val" type="number" value="100"/>
+            <view class="category-unit">份</view>
+          </view>
+          <view class="category-item">
+            <view class="category-title">肉蛋类</view>
+            <input class="category-val" type="number" value="100"/>
+            <view class="category-unit">份</view>
+          </view>
+          <view class="category-item">
+            <view class="category-title">油脂类</view>
+            <input class="category-val" type="number" value="100"/>
+            <view class="category-unit">份</view>
+          </view>
+          
+        </view>
+
+      </view>
+    </view>
+    <view class="card">
+      <view class="card-title">
+        <image src="/images/yundongguanli.png"></image>
+        <text>运动</text>
+        <navigator url="/pages/ncds/sport" class="card-sup">
+          <view class="card-sup-text">运动小贴士</view>
+          <image src="/images/wenhao.png"></image>
+        </navigator>
+      </view>
+      <view class="card-content">
+        <view class="card-type">有氧运动</view>
+
+        <checkbox-group class="check-box">
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>快走</text>
+            </label>
+          </view>
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text decode="true">慢&ensp;&ensp;跑</text>
+            </label>
+          </view>
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>健身操</text>
+            </label>
+          </view>
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>骑车</text>
+            </label>
+          </view>
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>游泳</text>
+            </label>
+          </view>
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>羽毛球</text>
+            </label>
+          </view>
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>兵乓球</text>
+            </label>
+          </view>
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>跳绳</text>
+            </label>
+          </view>
+        </checkbox-group>
+
+
+
+        
+        <view class="card-des">
+          <view class="des-title">运动时长</view>
+          <input class="des-val" type="number" value="120"/>
+          <view class="des-unit">分钟/次</view>
+        </view>
+
+
+        <view class="card-type">抗阻运动</view>
+
+        <checkbox-group class="check-box">
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>哑铃</text>
+            </label>
+          </view>
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>弹力带</text>
+            </label>
+          </view>
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>俯卧撑</text>
+            </label>
+          </view>
+          <view class="check-item">
+            <label class="check-lable">          
+              <checkbox/>          
+              <text>器械</text>
+            </label>
+          </view>
+          
+        </checkbox-group>
+
+
+        
+        <view class="card-des">
+          <view class="des-title">运动时长</view>
+          <input class="des-val" type="number" value="120"/>
+          <view class="des-unit">分钟/次</view>
+        </view>
+        <view class="card-type">运动时有效心率</view>
+        <view class="card-des">
+          <input class="des-val" type="number" value="120"/>
+          <view class="des-unit">分钟/次</view>
+          <view class="des-sup">【220-年龄×60-70%】</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+</view>
+
+<view class="ncds-mask" catchtouchmove="ture" wx:if="{{show}}">
+  <view class="ncds-content">
+    <view class="ncds-title">管理慢性病<image class="cancle" bindtap="cancle" src="/images/cancle.png"></image></view>
+    <scroll-view scroll-y="true" class="ncds-list" style="min-height:max-content;">
+      <block wx:for="{{ncds}}">
+        <view class="ncds-item" bindtap="{{util.indexOf(check_ncds,'糖尿病')?'check':'add'}}" data-index="{{index}}">
+          <view class="item-name {{item.check?'item-active':''}}">{{item.name}}</view>
+          <image wx:if="{{item.check}}" class="item-hook" src="/images/hook.png"></image>
+        </view>
+      </block>
+    </scroll-view>
+  </view>
+</view>

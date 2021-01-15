@@ -1,0 +1,30 @@
+page{
+  background-color: #fff;
+}
+.title{
+  font-size: 36rpx;
+  color: #333333;
+  height: 140rpx;
+  line-height: 140rpx;
+  text-align: center;
+}
+.sport-advise{
+  padding: 0 60rpx;
+}
+.advise{
+  position: relative;
+  padding-left:30rpx;
+  line-height: 60rpx;
+  font-size:30rpx;
+  color: #333333;
+}
+.advise::before{
+  position: absolute;
+  content: "";
+  width:20rpx;
+  height: 20rpx;
+  left:0;
+  top:20rpx;
+  background-color: #f99303;
+  border-radius: 50%;
+}
